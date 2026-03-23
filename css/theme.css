@@ -1,0 +1,72 @@
+/* ── LIGHT THEME ── */
+[data-theme="light"] {
+  --bg:         #f7f6f2;
+  --surface:    #ffffff;
+  --surface2:   #f0eeea;
+  --border:     #e5e2db;
+  --border2:    #d0cdc5;
+  --text:       #1a1a1a;
+  --text2:      #4a4a4a;
+  --muted:      #888880;
+  --orange:     #ff6122;
+  --orange-dk:  #d94e0d;
+  --orange-lt:  #fff3ee;
+  --orange-mid: rgba(255,97,34,0.15);
+  --nav-bg:     #ffffff;
+  --card-bg:    #ffffff;
+  --shadow:     0 2px 14px rgba(0,0,0,0.08);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.13);
+  --input-bg:   #f0eeea;
+  --green:      #22a06b;
+  --blue:       #2d7dd2;
+  --red:        #d93025;
+  --star:       #f59e0b;
+}
+
+/* ── DARK THEME ── */
+[data-theme="dark"] {
+  --bg:         #0e0e10;
+  --surface:    #18181c;
+  --surface2:   #222228;
+  --border:     #2c2c34;
+  --border2:    #3a3a45;
+  --text:       #eeeae4;
+  --text2:      #aaa89f;
+  --muted:      #606060;
+  --orange:     #ff7a42;
+  --orange-dk:  #ff6122;
+  --orange-lt:  rgba(255,97,34,0.14);
+  --orange-mid: rgba(255,97,34,0.18);
+  --nav-bg:     #14141a;
+  --card-bg:    #18181c;
+  --shadow:     0 2px 14px rgba(0,0,0,0.35);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.5);
+  --input-bg:   #222228;
+  --green:      #2fcf86;
+  --blue:       #4da6ff;
+  --red:        #ff5252;
+  --star:       #fbbf24;
+}
+
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:15px;scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased;padding-top:104px;transition:background .3s,color .3s}
+button{font-family:'Nunito',sans-serif;cursor:pointer;border:none;outline:none}
+input,textarea,select{font-family:'Nunito',sans-serif;outline:none}
+a{color:var(--orange);text-decoration:none}
+img{max-width:100%;display:block}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:var(--surface2)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+::selection{background:var(--orange-mid);color:var(--text)}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideRight{from{transform:translateX(20px);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes popIn{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,97,34,.4)}50%{box-shadow:0 0 0 8px rgba(255,97,34,0)}}
+@keyframes growUp{from{height:0!important}to{}}
+@keyframes shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
+@keyframes spin{to{transform:rotate(360deg)}}

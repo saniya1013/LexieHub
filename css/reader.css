@@ -1,0 +1,40 @@
+/* ── READER PAGE ── */
+.reader-page{max-width:740px;margin:0 auto;padding:28px 24px 80px}
+
+.reader-topbar{display:flex;align-items:center;gap:14px;margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.reader-info{flex:1}
+.reader-info h2{font-size:17px;font-weight:800}
+.reader-info p{font-size:12px;color:var(--muted)}
+.reader-actions-bar{display:flex;gap:8px}
+
+.reader-progress-bar{height:3px;background:var(--border);border-radius:2px;margin-bottom:26px;overflow:hidden}
+.reader-progress-fill{height:100%;background:var(--orange);border-radius:2px;transition:width .5s}
+
+/* Body themes */
+.reader-body{border:1px solid var(--border);border-radius:18px;padding:46px 54px;box-shadow:var(--shadow);transition:background .3s,color .3s}
+.reader-body.theme-white{background:#ffffff;color:#2a2a2a}
+.reader-body.theme-sepia{background:#f8f1e3;color:#3a2e1e}
+.reader-body.theme-dark{background:#1a1a20;color:#ccc8c0}
+.reader-body.font-sans{font-family:'Nunito',sans-serif}
+.reader-body.font-serif{font-family:'Playfair Display',Georgia,serif}
+.reader-body.font-mono{font-family:'Courier New',monospace}
+
+.chapter-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;margin-bottom:26px;padding-bottom:16px;border-bottom:2px solid var(--orange-lt);color:var(--text)}
+.reader-body p{margin-bottom:20px;line-height:1.95}
+.reader-body p:first-of-type::first-letter{font-size:55px;font-family:'Playfair Display',serif;font-weight:900;float:left;line-height:.82;margin-right:8px;margin-top:6px;color:var(--orange)}
+
+.reader-footer{display:flex;align-items:center;justify-content:space-between;margin-top:26px;padding-top:20px;border-top:1px solid var(--border);flex-wrap:wrap;gap:12px}
+.vote-btn{display:flex;align-items:center;gap:6px;background:none;border:1.5px solid var(--border2);border-radius:999px;padding:9px 18px;font-size:13px;font-weight:700;color:var(--text2);transition:all .15s}
+.vote-btn:hover{border-color:var(--orange);color:var(--orange)}
+.vote-btn.voted{background:var(--orange);color:#fff;border-color:var(--orange)}
+.reader-nav-btns{display:flex;gap:8px}
+
+/* TOC drawer */
+.toc-drawer{position:fixed;top:0;left:0;bottom:0;width:280px;background:var(--surface);border-right:1px solid var(--border);z-index:300;transform:translateX(-100%);transition:transform .3s ease;padding:24px;overflow-y:auto;box-shadow:4px 0 20px rgba(0,0,0,.1)}
+.toc-drawer.open{transform:translateX(0)}
+.toc-title{font-size:16px;font-weight:800;margin-bottom:16px}
+.toc-item{padding:10px 12px;border-radius:9px;cursor:pointer;font-size:13px;font-weight:600;color:var(--text2);transition:all .15s}
+.toc-item:hover{background:var(--surface2);color:var(--text)}
+.toc-item.active{background:var(--orange-lt);color:var(--orange)}
+
+@media(max-width:600px){.reader-body{padding:26px 22px;font-size:15px}.chapter-title{font-size:20px}}
