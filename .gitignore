@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# API keys (never commit these)
+.env
+secrets.js
+config.js
+
+# Build artifacts
+dist/
+node_modules/
